@@ -2,11 +2,13 @@
 <html lang="en" dir="ltr">
 
 <head>
-  <meta charset="utf-8">
-  <title>Contact - Sunayana Shrivastava </title>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-  <link rel="stylesheet" type="text/css" href="theme.css">
-  <link href="img/favicon.ico" rel="shortcut icon">
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+  <title> Contact - Sunayana Shrivastava </title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"/>
+  <link rel="stylesheet" type="text/css" href="theme.css"/>
+  <link rel="stylesheet" type="text/css" href="Footer.css"/>
+  <link href="img/logo/7.png" rel="shortcut icon">
 </head>
 
 <body>
@@ -16,14 +18,18 @@
         <nav class="navbar navbar-default">
           <div class="container-fluid">
             <div class="navbar-header">
-              <img src="img\Logo\7.png" alt="Logo" width="130" height="120" />
+              <a href="WebsiteHome.html"><img src="img\Logo\7.png" alt="Logo" width="130" height="120" /></a>
             </div>
             <div class="nav">
-				<ul class="site-menu">
-					<li><a href="WebsiteWorkSection.html">Experience</a></li>
-					<li><a href="WebsiteAboutSection.html">About</a></li>
-					<li><a href="WebsiteContactSection.html">Contact</a></li>
-				</ul>
+				<p class="site-menu">
+					<a href="WebsiteHome.html">Home</a>
+					|
+					<a href="WebsiteWorkSection.html">Work</a>
+					|
+					<a href="WebsiteAboutSection.html">About</a>
+					|
+					<a href="WebsiteContactSection.html">Contact</a>
+				</p>
             </div>
           </div>
         </nav>
@@ -31,6 +37,67 @@
     </div>
 	<hr>
 	<br>
-<body>
+<div class="container">
+<h1> Lets Chat!</h1>
+<p> Please complete the form below!</p>
+  <form action="mailto:sas585@drexel">
+  <style type="text/css">
+  input[type=text], select, textarea {
+  width: 95%; /* Full width */
+  padding: 12px; /* Some padding */
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+  nput[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+  background-color: #BC8F8F;
+}
+
+/* Add a background color and some padding around the form */
+.container {
+  border-radius: 5px;
+  background-color: White;
+}
+</style>
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+    <label for="email">Contact Information</label>
+    <input type="text" id="Email" name="Email" placeholder="Your Email..">
+
+    <label for="subject">Subject</label>
+    <textarea id="subject" name="subject" placeholder="Write something.." style="height:100px"></textarea>
+
+	<label for="Message">Message</label>
+    <textarea id="Message" name="Message" placeholder="Write something.." style="height:200px"></textarea>
+
+	<form method="post" action="mailto:sas585@drexel" enctype="text/plain" >
+	<input type="submit" value="Send Email" />
+	</form>
+
+  </form>
+</div>
+<br>
+<br>
+<br>
+</body>
+
+
 
 </html>
